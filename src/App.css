@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: url('./components/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #3171bd;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background:#fbfbfb;
+  padding: 20px; 
+  border-radius: 10px; 
+  margin-right: 5rem;
+
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #3171bd;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #3171bd;
+}
+
+.todo-input::placeholder {
+  color: #14141485;
+}
+
+.todo-btn {
+  background: #3171bd;
+  color: #fbfbfb;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(0, 0%, 93%);
+  color: bl;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.completed {
+  color: #49494991;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
+
+.editable-title-input {
+  font-size: 1rem;
+  padding: 5px;
+  border: 2px solid #fbfbfb;
+;
+  width: 90%;
+  text-align: center;
+  color: #3171bd;
+  background-color:#fbfbfb;
+  transition: border-color 0.3s ease;
+}
+
+.editable-title-input:focus {
+  border-color: #fbfbfb;
+  outline: none;
+}
+
+
+.TodoWrapper {
+  position: relative;
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.pin-image {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  transform: translate(-50%, 0);
+  width: 40px;
+  height: 40px;
+}
+
+
